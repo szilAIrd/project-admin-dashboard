@@ -1,8 +1,11 @@
+
+
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
+    font-family: Roboto;
 
 }
 
@@ -24,10 +27,11 @@ body{
 }
 
 .projects{
-    
     grid-column: 1/2;
     grid-row: 1/3; 
-    background-color: purple;
+    /* background-color: purple; */
+    padding: 16px;
+    font-size: x-large;
 
 }
 
@@ -35,4 +39,46 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    height: 90%;
+    width: 95%;
+    margin:3%;    
+}
+
+.project{
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid rgb(255, 187, 0);
+    padding: 16px;
+    position: relative;     /* Needed to anchor absolute child */
+
+}
+
+.project-name{
+    font-size: large;
+    font-weight: 800;
+}
+
+.project-description{
+    padding-top: 16px;
+    color: rgb(150, 150, 150);
+    font-size: medium; 
+}
+
+.project-actions{
+    /* display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end; */
+    position: absolute;
+    right: 16px;            /* Distance from the right edge */
+    bottom: 16px;   
+
+}
+
+.project-icons{
+    width: 24px;
+    height: 24px;
 }
